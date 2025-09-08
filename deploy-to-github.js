@@ -43,8 +43,7 @@ compiler.run((err, stats) => {
             Console.error("There was an error publishing your website");
             return;
         }
-        //https://<github_user>.github.io/<repository-name>
-        Console.success(`Your website has been deployed successfully here: https://${repository["owner"]}.github.io/${repository["name"]}/`);
+    Console.success(`Your website has been deployed successfully here: https://${repository["owner"]}.github.io/${repository["name"]}/`);
         Console.info(`Changes on your deployed website take 10 min aprox to show, please be patient. Happy coding!`);
     });
 });

@@ -1,16 +1,38 @@
 
-
 .contador{
-text-align: center;
-background: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	text-align: center;
+	background: #000;
 }
 
 .contador div{
-display: inline-block;
-font-size: 60px;
-line-height: 120px;
-background: #101010;
-color: white;
-padding: 10px;
-margin: 3px;
- }
+	display: inline-block;
+	font-size: 90px;
+	line-height: 160px;
+	background: #101010;
+	color: #ffffff;
+	padding: 14px 22px;
+	margin: 4px;
+	min-width: 60px;
+	text-align: center;
+}
+
+.bigCounter{
+	display: inline-block;
+}
+
+.cuatro, .tres, .dos, .uno {
+	display: inline-block;
+	font-size: 90px;
+	line-height: 160px;
+	background: #101010;
+	color: #ffffff;
+	padding: 14px 22px;
+	margin: 4px;
+	min-width: 60px;
+	text-align: center;
+}
+
