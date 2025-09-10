@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom/client';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap";
 import './styles/index.css';
-import Contador from './js/components/index.jsx';
+import ContadorUI from './js/components/index.jsx';
 
-function AppContador({ numerouno, numerodos, numerotres, numerocuatro, numerocinco, numeroseis }) {
+function Contador({ numerouno, numerodos, numerotres, numerocuatro, numerocinco, numeroseis }) {
   return (
     <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'flex-start', justifyContent: 'center', background: '#f5f5f5', paddingTop: '6vh' }}>
       <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '24px'}}>
-        <Contador
+  <ContadorUI
           numerouno={numerouno}
           numerodos={numerodos}
           numerotres={numerotres}
@@ -26,7 +26,7 @@ function AppContador({ numerouno, numerodos, numerotres, numerocuatro, numerocin
 const raiz = ReactDOM.createRoot(document.getElementById('root'));
 let contador = 0;
 
-function getDigits(contador) {
+function digitos(contador) {
   return {
     numerouno: Math.floor(contador / 1) % 10,
     numerodos: Math.floor(contador / 10) % 10,
@@ -37,9 +37,9 @@ function getDigits(contador) {
   };
 }
 
-raiz.render(<AppContador {...getDigits(contador)} />);
+raiz.render(<Contador {...digitos(contador)} />);
 
 setInterval(() => {
   contador += 1;
-  raiz.render(<AppContador {...getDigits(contador)} />);
+  raiz.render(<Contador {...digitos(contador)} />);
 }, 1000);
