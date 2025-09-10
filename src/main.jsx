@@ -5,7 +5,7 @@ import "bootstrap";
 import './styles/index.css';
 import Contador from './js/components/index.jsx';
 
-function Principal({ numerouno, numerodos, numerotres, numerocuatro, numerocinco, numeroseis }) {
+function AppContador({ numerouno, numerodos, numerotres, numerocuatro, numerocinco, numeroseis }) {
   return (
     <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'flex-start', justifyContent: 'center', background: '#f5f5f5', paddingTop: '6vh' }}>
       <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '24px'}}>
@@ -37,9 +37,9 @@ function getDigits(contador) {
   };
 }
 
-raiz.render(<Principal {...getDigits(contador)} />);
+raiz.render(<AppContador {...getDigits(contador)} />);
 
 setInterval(() => {
   contador += 1;
-  raiz.render(<Principal {...getDigits(contador)} />);
+  raiz.render(<AppContador {...getDigits(contador)} />);
 }, 1000);
