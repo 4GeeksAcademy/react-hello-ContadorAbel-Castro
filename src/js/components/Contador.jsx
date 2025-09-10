@@ -1,6 +1,6 @@
 import React from "react";
 
-export function Reloj({ className = "", style = {}, iconClass = "far fa-clock" }) {
+export function Relojito({ className = "", style = {}, iconClass = "far fa-clock" }) {
 	return (
 		<div className={className}>
 			<i className={iconClass} style={style}></i>
@@ -8,6 +8,6 @@ export function Reloj({ className = "", style = {}, iconClass = "far fa-clock" }
 	);
 }
 
-export function Digito({ value, className = "" }) {
+export function Numeros({ value, className = "" }) {
 	return <div className={className}>{value % 10}</div>;
 }

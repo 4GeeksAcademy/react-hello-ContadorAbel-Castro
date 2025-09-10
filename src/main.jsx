@@ -13,23 +13,23 @@ function Main() {
     return () => clearInterval(id);
   }, []);
 
-  const numeroUno = Math.floor(count / 1) % 10;
-  const numeroDos = Math.floor(count / 10) % 10;
-  const numeroTres = Math.floor(count / 100) % 10;
-  const numeroCuatro = Math.floor(count / 1000) % 10;
-  const numeroCinco = Math.floor(count / 10000) % 10;
-  const numeroSeis = Math.floor(count / 100000) % 10;
+  const numerouno = Math.floor(count / 1) % 10;
+  const numerodos = Math.floor(count / 10) % 10;
+  const numerotres = Math.floor(count / 100) % 10;
+  const numerocuatro = Math.floor(count / 1000) % 10;
+  const numerocinco = Math.floor(count / 10000) % 10;
+  const numeroseis = Math.floor(count / 100000) % 10;
 
   return (
     <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'flex-start', justifyContent: 'center', background: '#f5f5f5', paddingTop: '6vh' }}>
       <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '24px'}}>
         <Contador
-          numeroUno={numeroUno}
-          numeroDos={numeroDos}
-          numeroTres={numeroTres}
-          numeroCuatro={numeroCuatro}
-          numeroCinco={numeroCinco}
-          numeroSeis={numeroSeis}
+          numerouno={numerouno}
+          numerodos={numerodos}
+          numerotres={numerotres}
+          numerocuatro={numerocuatro}
+          numerocinco={numerocinco}
+          numeroseis={numeroseis}
         />
       </div>
     </div>
