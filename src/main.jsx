@@ -23,7 +23,7 @@ function Contador({ numerouno, numerodos, numerotres, numerocuatro, numerocinco,
 }
 
 
-const raiz = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root'));
 let contador = 0;
 
 function digitos(contador) {
@@ -37,9 +37,9 @@ function digitos(contador) {
   };
 }
 
-raiz.render(<Contador {...digitos(contador)} />);
+root.render(<Contador {...digitos(contador)} />);
 
 setInterval(() => {
   contador += 1;
-  raiz.render(<Contador {...digitos(contador)} />);
+  root.render(<Contador {...digitos(contador)} />);
 }, 1000);
