@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap";
 import './styles/index.css';
-import ContadorUI from './js/components/index.jsx';
+import ContadorUI from './index.jsx';
 
 function Contador({ numerouno, numerodos, numerotres, numerocuatro, numerocinco, numeroseis }) {
   return (
